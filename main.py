@@ -7,9 +7,9 @@ def main():
     print("=== AI Sports Betting Advisor & Strategy Engine ===")
     
     # 1. Insert your free API token here (or store it in an environment variable)
-    API_TOKEN = "YOUR_FOOTBALL_DATA_API_TOKEN"
+    API_TOKEN = "5ddc072719ca46f18184f6bad9a945f5"
     
-    if API_TOKEN == "YOUR_FOOTBALL_DATA_API_TOKEN":
+    if API_TOKEN == "5ddc072719ca46f18184f6bad9a945f5":
         print("[Notice] Please paste your actual free API token from football-data.org to fetch live matches.")
         return
 
