@@ -4,17 +4,16 @@ import pandas as pd
 
 def fetch_upcoming_fixtures(api_token, date_from=None, date_to=None):
     """
-    Fetches upcoming matches from the football-data.org API within a specific date range.
+    Fetches upcoming matches from the football-data.org API within a specified date range.
     """
     url = "https://api.football-data.org/v4/matches"
     
-    # If specific dates are provided, add them as query parameters
     params = {}
     if date_from and date_to:
         params['dateFrom'] = date_from
         params['dateTo'] = date_to
         
-    headers = {'X-Auth-Token': "5ddc072719ca46f18184f6bad9a945f5"}
+    headers = {'X-Auth-Token': api_token}
     
     response = requests.get(url, headers=headers, params=params)
     
