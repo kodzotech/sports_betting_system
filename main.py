@@ -12,9 +12,9 @@ def main():
         print("[Notice] Please paste your actual free API token from football-data.org to fetch live matches.")
         return
 
-    # Fetch upcoming fixtures for a future date range
-    print("\n[1/3] Fetching live upcoming matches for the next few weeks...")
-    fixtures_df = fetch_upcoming_fixtures(API_TOKEN, date_from="2026-09-28", date_to="2026-10-15")
+    # Fetch upcoming fixtures for a 10-day window (within the API limit)
+    print("\n[1/3] Fetching live upcoming matches for the next 10 days...")
+    fixtures_df = fetch_upcoming_fixtures(API_TOKEN, date_from="2026-09-28", date_to="2026-10-07")
     
     if fixtures_df.empty:
         print("No upcoming matches found in this date range.")
