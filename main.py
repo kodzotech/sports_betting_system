@@ -6,10 +6,11 @@ from src.evaluator import evaluate_value_bet
 def main():
     print("=== AI Sports Betting Advisor & Strategy Engine ===")
     
-    # 1. Insert your free API token here (or store it in an environment variable)
+    # 1. Insert your free API token here
     API_TOKEN = "5ddc072719ca46f18184f6bad9a945f5"
     
-    if API_TOKEN == "5ddc072719ca46f18184f6bad9a945f5":
+    # Updated check: verifies against the placeholder string, not your token
+    if API_TOKEN == "YOUR_FOOTBALL_DATA_API_TOKEN":
         print("[Notice] Please paste your actual free API token from football-data.org to fetch live matches.")
         return
 
@@ -26,7 +27,6 @@ def main():
     # 3. Simulate getting model predictions & bookmaker odds for upcoming games
     print("\n[2/3] Running prediction model on upcoming matches...")
     
-    # (In a fully trained pipeline, you pass fixture features into predictor.predict_match_probabilities())
     # Here is a strategy simulation for the first upcoming match found:
     if not fixtures_df.empty:
         sample_match = fixtures_df.iloc[0]
