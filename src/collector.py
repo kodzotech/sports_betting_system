@@ -7,7 +7,7 @@ def fetch_upcoming_fixtures(api_token):
     Fetches real upcoming matches from the football-data.org API.
     """
     url = "https://api.football-data.org/v4/matches"
-    headers = {'X-Auth-Token': 5ddc072719ca46f18184f6bad9a945f5}
+    headers = {'X-Auth-Token': '5ddc072719ca46f18184f6bad9a945f5'}
     
     response = requests.get(url, headers=headers)
     
